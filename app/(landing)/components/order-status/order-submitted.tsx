@@ -18,7 +18,7 @@ const OrderSubmitted = () => {
         alt="order submitted"
         className="mb-4"
       />
-      <h2 className="text-2xl font-semibold mb-2">Order Submitted !!</h2>
+      <h2 className="text-2xl font-semibold mb-2">Order Submitted!!</h2>
       <p className="text-center mb-8">
         Your Order is recorded in our system, we are still confirming the
         payment status, please wait and your order status will be updated in
