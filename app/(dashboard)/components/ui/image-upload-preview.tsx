@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRef } from "react";
-import { FiUploadCloud } from "react-icons/fi";
+import { FiEdit, FiUploadCloud } from "react-icons/fi";
 
 type TImageUploadPreviewProps = {
   label?: string;
@@ -35,13 +35,15 @@ const ImageUploadPreview = ({
         className="border-2 border-dashed border-primary bg-primary/5 rounded-lg h-50 flex flex-col justify-center items-center"
       >
         {value ? (
-          <Image
-            src={value}
-            alt="preview product"
-            className="w-full h-full object-cover"
-            width={190}
-            height={190}
-          />
+          <div className="max-w-47.5 relative overflow-hidden">
+            <Image
+              src={value}
+              alt="preview product"
+              className="w-full h-full object-cover"
+              width={190}
+              height={190}
+            />
+          </div>
         ) : (
           <>
             <FiUploadCloud className="text-primary" size={24} />
